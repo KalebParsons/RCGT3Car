@@ -1,0 +1,14 @@
+Started by checking the imports the we would need for Python to be able to operate our Raspberry Pi properly.
+
+evdev allows us to communicate with an xbox controller. This allows us to decode events from the xbxo controller and decode them into python for processing.
+using evdev, we can also create virtual devices to test our code without the need for a physical device being used. this is an added bonus.
+
+Our car has 2 DC motors. one to power the steering linkage and the other to power the rear wheels. Our code will need to include the use of 2 DC motors for
+2 different purposes. We will need functions for forwards and backwards. we will name these functions 'forward' and 'backward' respectivley. our forwards and backwards 
+functsions will take inputs from the left and right triggers on the controller. Ontop of this, we will also need two functions labeled 'left' and 'right' using the same 
+premise as our forward and backward functions. However, these will take different inputs from the controller joysticks rather than the left and right triggers.
+
+Further annotations will be provided within the code itself. Any larger ideas that require further explnantion will be documented within this read me file. This is 
+to esnure that there is a common understanding for the reasoning behind our choices.
+
+Updates to our code can be found in this repository. edits and change will be documented and can be commited by both Jeremy and I. 
