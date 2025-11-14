@@ -11,7 +11,10 @@ premise as our forward and backward functions. However, these will take differen
 Using BCM numbering allows us to follow the Raspberry pis actual pin numbers when it comes time to connecting our system.
 PMW allows us to quickly switch the motor on an off at the desired frequency. we have preset this value to 100. however, we may need to increase this
 with further testing. the raspberry bi does not allow for variable power. its is simple binary on or off. using the PWM function allows us to 
-modulate the power using 
+modulate the power using...
+changing the duty cycle tells us how much of the PWM cycle stays on. This allows us to modulate the power of the motors given the inputs of thecontroller. The frequency 
+will stay fixed, but the length of the on and off wave change depending on the duty cycle.
+
 
 Further annotations will be provided within the code itself. Any larger ideas that require further explnantion will be documented within this read me file. This is 
 to esnure that there is a common understanding for the reasoning behind our choices.
